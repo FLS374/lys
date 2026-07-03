@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄炒蛋美食教程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        /* 顶部导航栏 */
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 40px;
+            background-color: #b2edf0;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #fff;
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav-center {
+            display: flex;
+            gap: 36px;
+            font-size: 15px;
+            color: #333;
+        }
+        .nav-center a {
+            text-decoration: none;
+            color: #333;
+        }
+        .login-btn {
+            background: #42d997;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* 头部横幅区域 */
+        .banner {
+            background: linear-gradient(135deg, #a0e8ee, #bff2f5);
+            display: flex;
+            padding: 30px 40px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .banner-text {
+            width: 48%;
+        }
+        .banner-subtitle {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .banner-title {
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #111;
+        }
+        .banner-desc {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 28px;
+            padding: 0 8px;
+        }
+        .banner-buttons {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+        .action-btn {
+            background: #42d997;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 22px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .tag-row {
+            display: flex;
+            gap: 12px;
+            font-size: 14px;
+        }
+        .tag-row span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .tag-row span::before {
+            content: "✓";
+            color: #00b96b;
+            font-weight: bold;
+        }
+        .banner-img-box {
+            width: 48%;
+        }
+        .banner-img-box img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        .bottom-tag-text {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #555;
+            background: #bff2f5;
+        }
+        /* 步骤主体区域 */
+        .step-container {
+            background-color: #ffe88a;
+            padding: 30px 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .step-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .step-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .step-small-desc {
+            font-size: 14px;
+            margin-bottom: 16px;
+            color: #222;
+        }
+        .step-num {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .step-subtitle {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .step-content {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .footer-quote {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header-nav">
+        <div class="nav-left">
+            <div class="avatar">
+                <img src="https://picsum.photos/id/64/45/45" alt="头像">
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="#">菜谱教程</a>
+            <a href="#">食材挑选</a>
+            <a href="#">常见问题</a>
+            <a href="#">火候技巧</a>
+        </div>
+        <button class="login-btn">登录</button>
+    </div>
+
+    <!-- 横幅主视觉 -->
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-subtitle">卢雅舒：我的番茄炒蛋美食手记</div>
+            <h1 class="banner-title">做好一碗番茄炒蛋，<br>火候与配比才是核心</h1>
+            <p class="banner-desc">无数次反复调试酸甜比例，把家常小菜做出饭店口感<br>新手也能一次成功，告别寡淡与过酸</p>
+            <div class="banner-buttons">
+                <button class="action-btn">【开始学习】</button>
+                <button class="action-btn">【观看实操视频】</button>
+            </div>
+            <div class="tag-row">
+                <span>零基础可学</span>
+                <span>食材家家都有</span>
+            </div>
+        </div>
+        <div class="banner-img-box">
+            <img src="https://picsum.photos/id/1080/600/450" alt="番茄炒蛋成品">
+        </div>
+    </div>
+    <div class="bottom-tag-text">美食日记 | 家常小厨 | 三餐四季 | 烟火厨房 | 家庭菜谱 | 美味家常菜 | 舌尖家常</div>
+
+    <!-- 三步教程区域 -->
+    <div class="step-container">
+        <!-- 步骤1 -->
+        <div class="step-card">
+            <img class="step-img" src="https://picsum.photos/id/102/400/300" alt="成品番茄炒蛋">
+            <p class="step-small-desc">三步搞定正宗番茄炒蛋：把控好顺序与火候，就能做到蛋嫩、汁浓、酸甜适口。</p>
+            <div class="step-num">01 备料处理：把控食材比例</div>
+            <div class="step-subtitle">标题：调配黄金配比</div>
+            <p class="step-content">文案：番茄2个、鸡蛋3枚，少许白糖中和酸味；番茄划十字去皮，鸡蛋加清水打散，炒出来更嫩滑</p>
+        </div>
+        <!-- 步骤2 -->
+        <div class="step-card">
+            <img class="step-img" src="https://picsum.photos/id/113/400/300" alt="炒蛋过程">
+            <p class="step-small-desc"></p>
+            <div class="step-num">02 分锅炒制：先炒蛋后炒番茄</div>
+            <div class="step-subtitle">标题：分开下锅不发柴</div>
+            <p class="step-content">文案：热油滑炒鸡蛋，定型立刻盛出；再下番茄小火熬出沙，把果肉煮成浓稠汤汁。</p>
+        </div>
+        <!-- 步骤3 -->
+        <div class="step-card">
+            <img class="step-img" src="https://picsum.photos/id/106/400/300" alt="备料食材">
+            <p class="step-small-desc"></p>
+            <div class="step-num">03 混合收汁：调出酸甜口感</div>
+            <div class="step-subtitle">标题：收汁锁住风味</div>
+            <p class="step-content">文案：倒回鸡蛋快速翻拌，放少许白糖调味，大火收浓汤汁，不用加水，原汁原味。</p>
+        </div>
+        <div class="footer-quote">“按照这个步骤做出来的番茄炒蛋，汤汁浓郁，鸡蛋蓬松，全家人都爱吃！”</div>
+    </div>
+</body>
+</html>
